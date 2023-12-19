@@ -1,0 +1,43 @@
+name: 'Feature Request'
+title: '[Enhancement]: '
+description: 'Submit a proposal for a new feature or an enhancement to improve the project. Share your innovative ideas or suggest practical improvements to help us evolve.'
+labels: ['enhancement']
+projects: ['slurui/slur']
+body:
+  - type: 'markdown'
+    attributes:
+      value: |
+        Thank you for filing an issue!
+        Before submitting, please search open/closed issues to avoid duplicates.
+        Please provide a clear and concise description of your request.
+  - type: 'textarea'
+    id: 'description'
+    attributes:
+      label: 'Description'
+      description: 'Describe your request in one or two sentences.'
+    validations:
+      required: true
+  - type: 'textarea'
+    id: 'justification'
+    attributes:
+      label: 'Problem Statement/Justification'
+      description: 'Provide valid reasons why this feature should be added to Chakra UI.'
+    validations:
+      required: true
+  - type: 'textarea'
+    id: 'proposed-solution'
+    attributes:
+      label: 'Proposed Solution or API'
+      description: 'Provide code snippets, gists, or links to the ideal design or API.'
+    validations:
+      required: true
+  - type: 'textarea'
+    id: 'alternatives'
+    attributes:
+      label: 'Alternatives'
+      description: 'List any alternative solutions you have considered before making this request.'
+  - type: 'textarea'
+    id: 'additional-information'
+    attributes:
+      label: 'Additional Information'
+      description: 'Provide any resources (links, screenshots, etc.) to assist in implementing this feature.'
